@@ -1,0 +1,99 @@
+* {
+     box-sizing: border-box; 
+    }
+body, html {
+     height: 100%; 
+    }
+body {
+    background: linear-gradient(90deg, #23282e 0%, #3b2e24 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0; color: #ffffff; 
+}
+h1 {
+    font-family: "Playfair Display"; 
+    font-size: 30px; 
+    padding: 10px 0px; 
+    margin: 0px; 
+    text-align: center;
+}
+.field-box {
+    border: 2px solid #d0d0d0; float: left; 
+}
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:  1600px;
+}
+.field .tileW {
+     width: 40px;  
+     height: 40px;  
+     background-size: 100%; 
+     background-image: url(images/tile-W.png); z-index: 4; 
+}
+.field .tile {
+    width: 40px;  
+    height: 40px;  
+    background-size: 100%; 
+    background-image: url(images/tile-.png); z-index: 5; 
+}
+.field .tileHP {
+    width: 40px;  
+     height: 40px;  
+     background-size: 100%; 
+     background-image: url(images/tile-HP.png); z-index: 9; 
+}
+.field .tileSW {
+     width: 40px;  
+     height: 40px;  
+     background-size: 100%; 
+     background-image: url(images/tile-SW.png); z-index: 9; 
+}
+.field .tileE {
+    width: 40px;  
+     height: 40px;  
+     background-size: 100%; 
+     background-image: url(images/tile-E.png); z-index: 10; 
+}
+.field .tileP {
+    width: 40px;  
+     height: 40px;  
+     background-size: 100%; 
+     background-image: url(images/tile-P.png); z-index: 10; 
+}
+.field .tileE .health {
+     background-color: #ff0000; z-index: 11; 
+     left: 0px; 
+     top: 0px; 
+     height: 3px; 
+}
+.field .tileP .health {
+     background-color: #00ff00; z-index: 11; 
+     left: 0px; 
+     top: 0px; 
+     height: 3px; 
+}
+.inventory-box {
+     border: 2px solid #d0d0d0; 
+     display: flex; 
+     justify-content: center; 
+     align-items: center;
+}
+.inventory {    
+    width: 800px; 
+    height: 60px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.inventoryItems {
+    width: 40px;  
+    height: 40px;  
+    background-size: 100%; 
+    background-image: url(images/tile-SW.png); z-index: 9; 
+}
